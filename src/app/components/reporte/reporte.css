@@ -1,0 +1,8 @@
+tr:nth-child(even) { 
+    background-color: #f9f9f9; 
+}
+
+.total-fila { 
+    font-weight: bold; 
+    background-color: #e9ecef; 
+}

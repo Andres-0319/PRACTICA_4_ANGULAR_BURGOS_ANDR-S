@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Lista de Usuarios (API Externa)</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Usuario</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of usuarios">
+            <td>{{ u.id }}</td>
+            <td>{{ u.name }}</td>
+            <td>{{ u.username }}</td>
+            <td>{{ u.email }}</td>
+        </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,28 @@
+<div class="container facturas-form">
+    <form>
+        <h1 class="text-center text-primary">Facturas Gastos</h1>
+        
+        <div class="form-group">
+            <label for="ruc" class="form-label">Ruc</label>
+            <input type="text" class="form-control" id="ruc" name="ruc" [(ngModel)]="ruc">
+        </div>
+
+        <div class="form-group">
+            <label for="valor" class="form-label">Valor de factura</label>
+            <input type="number" class="form-control" id="valor" name="valor" [(ngModel)]="valor">
+        </div>
+
+        <div class="form-group">
+            <label for="gasto" class="form-label">Gasto</label>
+            <select class="form-select" name="gasto" [(ngModel)]="tipoGasto">
+                <option value="" disabled selected>Escoja el tipo de gasto</option>
+                <option value="salud">Salud</option>
+                <option value="vivienda">Vivienda</option>
+                <option value="educacion">Educación</option>
+                <option value="ninguno">Ninguno</option>
+            </select>
+        </div>
+        
+        <button type="button" class="btn btn-success" (click)="agregar()">Agregar</button>
+    </form>
+</div>
